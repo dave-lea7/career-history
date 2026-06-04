@@ -186,7 +186,8 @@
 **Redis 활용**
 - 사용자 인증 토큰(access / refresh) 캐싱
 - 추천 상품 데이터 캐싱
-- Lua 스크립트 기반 외부 API rate limiting (atomic 카운터·delay)
+- Lua 스크립트 기반 외부 API rate limiting ( 호출 횟수와 지연 처리를 원자적으로 제어하는 로직 구현 )
+- Redis를 활용한 포인트 중복 획득 방지 로직 구현
 
 **AWS 환경 운영 (인프라팀 협업 구조)**
 - 인프라팀이 서버 설정·인프라 구성을 담당하는 환경에서 협업
